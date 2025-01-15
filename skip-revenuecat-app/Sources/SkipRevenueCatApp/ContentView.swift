@@ -13,6 +13,7 @@ public struct ContentView: View {
     @ObservedObject var storeViewModel = Store.shared
     
     @State private var isPresented = false
+    @State private var isCustomPaywallPresented = false
     @State private var debugOverlayVisible: Bool = false
     
     public init() {
@@ -34,6 +35,17 @@ public struct ContentView: View {
                     Button("Show Paywall") {
                         isPresented = true
                     }
+                    
+                    // Have not tested on Android
+                    #if os(iOS)
+                    Button("Show Custom Paywall") {
+                        isCustomPaywallPresented = true
+                    }
+                    .sheet(isPresented: $isCustomPaywallPresented) {
+                        CustomPaywall(isPresented: $isCustomPaywallPresented)
+                            .modifier(StoreViewModifier())
+                    }
+                    #endif
                     
                 }
                 .sheet(isPresented: $isPresented) {
