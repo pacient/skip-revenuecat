@@ -213,6 +213,9 @@
         }
       }
     },
+    "OK" : {
+
+    },
     "Powered by %@" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -299,6 +302,9 @@
           }
         }
       }
+    },
+    "Show Custom Paywall" : {
+
     },
     "Show Paywall" : {
 

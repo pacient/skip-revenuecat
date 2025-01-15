@@ -10,5 +10,6 @@ struct StoreConstants {
     #endif
     
     static let entitlementID = "Premium"
+    static let packageID = "$rc_lifetime"
     
 }
