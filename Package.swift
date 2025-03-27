@@ -19,7 +19,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "1.1.6"),
         .package(url: "https://source.skip.tools/skip-foundation.git", from: "1.0.0"),
-        .package(url: "https://github.com/RevenueCat/purchases-hybrid-common.git", exact: "13.13.0")
+        .package(url: "https://github.com/RevenueCat/purchases-hybrid-common.git", exact: "13.13.1")
     ],
     targets: [
         .target(
@@ -37,10 +37,6 @@ let package = Package(
             resources: [.process("Resources")],
             plugins: [.plugin(name: "skipstone", package: "skip")]
         ),
-        // .binaryTarget(
-        //     name: "SkipRevenueCatLibrary",
-        //     path: "./skip-revenuecat-library/skip-revenuecat-library/build/XCFrameworks/release/SkipRevenueCatLibrary.xcframework"
-        // ),
             .binaryTarget(
                 name: "SkipRevenueCatLibrary",
                 url: "https://api.github.com/repos/pacient/skip-revenuecat/releases/assets/241362659.zip",
