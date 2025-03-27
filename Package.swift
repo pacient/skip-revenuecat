@@ -39,8 +39,8 @@ let package = Package(
         ),
             .binaryTarget(
                 name: "SkipRevenueCatLibrary",
-                url: "https://api.github.com/repos/pacient/skip-revenuecat/releases/assets/241362659.zip",
-                checksum: "2d2dc5913cc03d028d4b2cdf3bc9b8302abbdae323df69533d8ee50c02114ced"
+                url: "https://github.com/pacient/skip-revenuecat/releases/download/0.11.1/SkipRevenueCatLibrary.xcframework.zip",
+                checksum: "b427c1fd02d6a71d8ec4cb5eef92533d38beffccbef50dbcba2f096c8ce0b383"
             ),
 
         .testTarget(
