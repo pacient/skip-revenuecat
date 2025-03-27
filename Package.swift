@@ -41,11 +41,11 @@ let package = Package(
         //     name: "SkipRevenueCatLibrary",
         //     path: "./skip-revenuecat-library/skip-revenuecat-library/build/XCFrameworks/release/SkipRevenueCatLibrary.xcframework"
         // ),
-       .binaryTarget(
-           name: "SkipRevenueCatLibrary",
-           url: "https://api.github.com/repos/aduryagin/skip-revenuecat/releases/assets/194906779.zip",
-           checksum: "2d2dc5913cc03d028d4b2cdf3bc9b8302abbdae323df69533d8ee50c02114ced"
-       ),
+//       .binaryTarget(
+//           name: "SkipRevenueCatLibrary",
+//           url: "https://api.github.com/repos/aduryagin/skip-revenuecat/releases/assets/194906779.zip",
+//           checksum: "2d2dc5913cc03d028d4b2cdf3bc9b8302abbdae323df69533d8ee50c02114ced"
+//       ),
         
         .testTarget(
             name: "SkipRevenueCatTests",
