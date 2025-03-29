@@ -1,7 +1,7 @@
 #!/bin/sh
 set -ex
 
-gradle assembleSkipRevenueCatLibraryXCFramework
+gradle --no-configuration-cache assembleSkipRevenueCatLibraryXCFramework
 
 cd skip-revenuecat-library/build/XCFrameworks/release/
 
