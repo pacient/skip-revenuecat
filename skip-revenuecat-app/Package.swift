@@ -14,8 +14,8 @@ let package = Package(
         .library(name: "SkipRevenueCatAppApp", type: .dynamic, targets: ["SkipRevenueCatApp"]),
     ],
     dependencies: [
-        .package(url: "https://source.skip.tools/skip.git", from: "1.1.7"),
-        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip.git", from: "1.5.6"),
+        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.28.19"),
         .package(name: "skip-revenuecat", path: "../")
     ],
     targets: [
